@@ -1,0 +1,151 @@
+@import url(https://fonts.google.com/specimen/Kumbh+Sans); 
+
+:root { 
+  /* Primary Colors */
+  --very-dark-desaturated-blue: hsl(238, 29%, 16%);
+  --soft-red: hsl(14, 88%, 65%);
+
+  /* Background Gradient */
+  --soft-violet: hsl(273, 75%, 66%);
+  --soft-blue: hsl(240, 73%, 65%);
+
+  /* Text */
+  --very-dark-grayish-blue: hsl(237, 12%, 33%);
+  --dark-grayish-blue: hsl(240, 6%, 50%);
+
+  /* Dividers */
+  --light-grayish-blue: hsl(240, 5%, 91%);
+}
+
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  background: linear-gradient(to bottom, var(--soft-violet), var(--soft-blue));
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 375px) { /* Mobile */
+  body {
+    height: 100vh;
+  }
+
+  .images {
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 10vh;
+    z-index: 1;
+  }
+
+  #card {
+    width: 45vh;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    position: relative;
+    top: -16vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image-mobile {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background-image: url(/images/illustration-woman-online-mobile.svg);
+  }
+
+  .image-mobile-shadow {
+    width: 100%;
+    position: relative;
+    top: 10vh;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  #card-header {
+    margin-top: 140px;
+  }
+
+  #card-header h1 {
+    font-size: 2.5rem;
+    color: var(--very-dark-desaturated-blue);
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  .content {
+    width: 100%;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .question {
+    font-size: 12px;
+    color: var(--dark-grayish-blue);
+    text-align: start;
+    margin-bottom: 1rem;
+  }
+
+  .accordion {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+  
+  .accordion-item {
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .accordion-header {
+    width: 100%;
+    padding: 0px;
+    margin-top: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    gap : 0px;
+    justify-content: space-between;
+  }
+  
+  .accordion-content {
+    display: none;
+  }
+
+  .answer {
+    font-size: 12px;
+    color: var(--dark-grayish-blue);
+    text-align: start;
+    padding-right: 52px;
+    margin-bottom: 1rem;
+  }
+
+  #seta {
+    height: max-content;
+
+  }
+
+
+}
+
+
